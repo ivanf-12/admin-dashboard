@@ -31,24 +31,24 @@ body {
 
 .sidebar-title {
   display: grid;
-  grid-template-columns: 35px auto;
+  grid-template-columns: 30px auto;
   align-items: center;
   column-gap: 10px;
 }
 
 .sidebar-title p {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .sidebar-title > i {
   color: white;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .nav-section, .branding-section {
   display: grid;
-  row-gap: 10px;
+  row-gap: 20px;
 }
 
 .nav-section div, .branding-section div {
@@ -65,7 +65,8 @@ body {
 
 .nav-section p, .branding-section p {
   color: white;
-  font-size: 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .header {
@@ -105,7 +106,7 @@ body {
   display: grid;
   grid-template-columns: 60px auto;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 20px;
 }
 
 .dog-img {
@@ -114,12 +115,17 @@ body {
   border-radius: 50%;
 }
 
+.greeting {
+  display: grid;
+  row-gap: 7px;
+}
+
 .greeting p {
   color: black;
 }
 
 .greeting > p:first-child {
-  font-size: 0.75rem;
+  font-size: 0.6rem;
 }
 
 .profile-container {
@@ -168,11 +174,43 @@ body {
   align-items: center;
   justify-items: center;
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
 }
 
 .main-content {
   background: #e5e5e5;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  padding: 10px 10px 20px 10px;
+}
+
+.left-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 35px repeat(3, 1fr);
+  gap: 10px;
+}
+
+.your-projects {
+  grid-column: 1 / -1;
+  display: grid;
+  align-items: end;
+}
+
+.card {
+  background: white;
+}
+
+.right-main {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.announcements-container, .trending-container {
+  display: grid;
+  grid-template-rows: 35px, 1fr;
+}
+
+.announcements-box, .trending-container {
+  background: white
 }
