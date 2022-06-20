@@ -181,7 +181,8 @@ body {
   background: #e5e5e5;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 10px 10px 20px 10px;
+  padding: 10px 20px 20px 10px;
+  gap: 10px;
 }
 
 .left-main {
@@ -204,13 +205,57 @@ body {
 .right-main {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .announcements-container, .trending-container {
   display: grid;
-  grid-template-rows: 35px, 1fr;
+  grid-template-rows: 35px 1fr;
+  gap: 10px;
 }
 
-.announcements-box, .trending-container {
-  background: white
+.announcements, .trending {
+  display: grid;
+  align-items: end;
+}
+
+.announcements-box, .trending-box {
+  background: white;
+  width: 90%;
+}
+
+.card, .announcements-box, .trending-box {
+  border-radius: 7px;
+  box-shadow: 0px 0px 3px gray;
+  max-width: 300px;
+}
+
+.card {
+  border-left: 7px solid orange;
+}
+
+.announcements-box {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 20px;
+  align-items: center;
+}
+
+.announcements-small {
+  padding: 20px 0px;
+  display: grid;
+  align-content: start;
+}
+
+.first, .second {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.small-title {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
+
+.small-paragraph {
+  font-size: 0.5rem;
 }
