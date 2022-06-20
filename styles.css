@@ -96,7 +96,7 @@ body {
 }
 
 .search-place {
-  height: 55%;
+  height: 25px;
   width: 100%;
   background-color: #e5e5e5;
   border-radius: 35px;
@@ -181,7 +181,7 @@ body {
   background: #e5e5e5;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 10px 20px 20px 10px;
+  padding: 10px 20px 20px 15px;
   gap: 10px;
 }
 
@@ -196,10 +196,6 @@ body {
   grid-column: 1 / -1;
   display: grid;
   align-items: end;
-}
-
-.card {
-  background: white;
 }
 
 .right-main {
@@ -232,6 +228,27 @@ body {
 
 .card {
   border-left: 7px solid orange;
+  background: white;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 20px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-paragraph {
+  font-size: 0.75rem;
+  font-weight: 400;
+  max-width: 40ch;
+}
+
+.card-buttons {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  justify-content: end;
 }
 
 .announcements-box {
@@ -253,9 +270,41 @@ body {
 
 .small-title {
   font-size: 0.75rem;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .small-paragraph {
-  font-size: 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 400;
+}
+
+.trending-box {
+  display: grid;
+  padding: 10px 20px;
+  grid-template-rows: repeat(4, 1fr);
+  align-content: space-around;
+  max-height: 250px;
+}
+
+.trending-small {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-content: center;
+  gap: 20px;
+}
+
+.small-texts {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+}
+
+.username {
+  font-size: 0.75rem;
+}
+
+.quotes {
+  font-size: 0.65rem;
+  font-weight: 400;
 }
